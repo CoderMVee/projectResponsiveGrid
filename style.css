@@ -160,6 +160,10 @@ figcaption {
     padding-top: 4px;
 }
 
+figcaption a {
+    margin-right: 0;
+}
+
 p {
     padding-top: 15px;
     padding-bottom: 25px;
