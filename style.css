@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #87A497;
+    font-size: 100%;
+}
+
+header {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    margin-right: 70px;
+}
+
+h1 {
+    margin: 18px 0;
+    font-size: 25pt;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    font-size: 32pt;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 9px 0;
+    font-weight: 800;
+    text-align: center;
+}
+
+p {
+    border-bottom: 2px solid #b8b9bb;
+    
+}
+
+aside {
+    color: #565758;
+}
+
+main {
+    color: #565758;
+}
+
+main h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 16px;
+}
+
+footer {
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+/* Header and Nav */
+
+header {
+    display: flex;
+    line-height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+}
+
+nav {
+    display: block;
+    padding: 0 18px;
+}
+
+/* Header and Nav END */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px auto 100px;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #87A497;
+    grid-column: 1 / span 3;
+}
+
+aside {   
+    background-color: rgb(205, 234, 205);
+    grid-column: 1 / span 1;   
+}
+
+#testamonials ul {
+    font-style: italic;
+}
+
+main {
+    background-color: white;
+    grid-column: 2 / span 2;
+}
+
+footer {
+    background-color: #87A497;
+    grid-column: 1 / span 3;
+}
+
+/* LAYOUTS */
+
+aside {
+    padding: 55px;
+}
+    
+/*aside .news,.inspo,#testamonials {
+    margin-top: 60px;
+}*/
+
+aside li {
+    padding-bottom: 10px;
+}
+
+main {
+    padding: 30px;
+}
+
+figcaption {
+    font-size: smaller;
+    font-style: italic;
+    text-align: center;
+    padding-top: 4px;
+}
+
+p {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+/* media queries*/
+@media only screen and (max-width: 768px) {
+    
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto 100px;
+        width: 100%;
+    }
+    header {
+        grid-column: span 1;
+    }
+    aside {
+        grid-column: span 1;
+        padding-top: 5px;
+        text-align: center;
+    }
+    main {
+        grid-column: span 1;
+    }
+    footer {
+        grid-column: span 1;
+        font-size: 0.8em;
+    }
+}
+
+
